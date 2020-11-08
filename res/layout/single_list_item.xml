@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="fill_parent" android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:background="@drawable/main_header_selector">
+    <LinearLayout android:id="@+id/LinearLayout01"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical">
+
+        <!-- content goes here -->
+        <TextView android:id="@+id/name"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/HeadingFont"
+
+                  android:text="@string/Heading"/>
+
+        <TextView android:id="@+id/coordinates"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@style/MenuTextFont"
+                  android:layout_weight="0"
+                  android:text="@string/Coordinates"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView android:id="@+id/latitudetitle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/LatitudeTitle"/>
+
+            <TextView android:id="@+id/latitude"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Latitude"/>
+        </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:id="@+id/longitudetitle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/LongitudeTitle"/>
+
+        <TextView android:id="@+id/longitude"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/Longitude"/>
+    </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <TextView android:id="@+id/distancetitle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/DistanceTitle"/>
+
+            <TextView android:id="@+id/distance"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Distance"/>
+        </LinearLayout>
+
+
+        <!-- stretching frame layout, using layout_weight -->
+        <FrameLayout
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:layout_weight="1">
+        </FrameLayout>
+
+        <!-- content fixated to the bottom of the screen -->
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <!-- your bottom content -->
+            <Button android:id="@+id/take_me"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_me"
+                    android:background="@drawable/btn_blue"
+                    style="@style/BtnText"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

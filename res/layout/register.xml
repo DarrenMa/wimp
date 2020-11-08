@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_header_selector">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip">
+        <!--  View Title Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/REGISTER"
+                style="@style/HeadingFont"/>
+        <!--  Name Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Username"
+                style="@style/NormalTextFont"/>
+        <!--  Name TextField -->
+        <EditText
+                android:id="@+id/registerName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Must_be_unique"/>
+
+        <!--  Email Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                style="@style/NormalTextFont"/>
+
+        <!--  Email TextField -->
+        <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                />
+
+        <!--  Password Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/Password"
+                style="@style/NormalTextFont"/>
+
+        <!--  Password TextField -->
+        <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:inputType="textPassword"
+                />
+
+        <!--  Error message -->
+        <TextView android:id="@+id/register_error"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#e30000"
+                  android:padding="10dip"
+                  android:textStyle="bold"/>
+
+        <!--  Login Button -->
+        <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="@string/Register"
+                android:background="@drawable/btn_blue"
+                style="@style/BtnText"/>
+
+        <!--  Link to Login Screen -->
+        <Button
+                android:id="@+id/btnLinkToLoginScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="@string/Already_registered_Login_Here"
+                android:background="@drawable/btn_blue"
+                style="@style/BtnText"/>
+    </LinearLayout>
+
+</ScrollView>

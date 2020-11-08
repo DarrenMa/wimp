@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menu_map_list_aroundme"
+            android:icon="@drawable/ic_menu_aroundme"
+            android:title="@string/menu_map_list_aroundme"
+            android:showAsAction="ifRoom|withText"/>
+
+    <item
+            android:id="@+id/menu_nearest"
+            android:icon="@drawable/ic_menu_nearest"
+            android:title="@string/menu_nearest"
+            android:showAsAction="ifRoom|withText"/>
+
+    <item
+            android:id="@+id/menu_save"
+            android:icon="@drawable/ic_menu_save"
+            android:title="@string/menu_save"
+            android:showAsAction="ifRoom|withText"/>
+
+    <!--<item-->
+            <!--android:id="@+id/menu_map_list"-->
+            <!--android:icon="@drawable/ic_menu_all_spots"-->
+            <!--android:title="@string/menu_map_list"-->
+            <!--android:showAsAction="ifRoom|withText"/>-->
+
+    <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/about"
+            android:showAsAction="ifRoom|withText"/>
+
+    <!--<item android:id="@+id/menu_list"-->
+    <!--android:icon="@drawable/ic_menu_list"-->
+    <!--android:title="@string/menu_list"-->
+    <!--android:showAsAction="withText"/>-->
+    <!--<item android:id="@+id/menu_aroundme"-->
+    <!--android:icon="@drawable/ic_menu_aroundme"-->
+    <!--android:title="@string/menu_aroundme"-->
+    <!--android:showAsAction="withText"/>-->
+</menu>

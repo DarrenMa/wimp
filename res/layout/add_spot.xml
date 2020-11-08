@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="fill_parent" android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:background="@drawable/main_header_selector">
+    <LinearLayout android:id="@+id/LinearLayout01"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical">
+
+        <!-- content goes here -->
+        <TextView android:id="@+id/name"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/HeadingFont"
+
+                  android:text="@string/Add_new"/>
+
+        <EditText
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Enter_spot_name"
+                />
+        <!-- stretching frame layout, using layout_weight -->
+        <FrameLayout
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:layout_weight="1">
+        </FrameLayout>
+
+        <!-- content fixated to the bottom of the screen -->
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <!-- your bottom content -->
+            <Button
+                    android:id="@+id/save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_spot"
+                    android:background="@drawable/btn_blue"
+                    style="@style/BtnText"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

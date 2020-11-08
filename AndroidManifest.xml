@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.supremosolutions.wimp"
+          android:versionCode="5"
+          android:versionName="1.4">
+
+    <uses-sdk
+            android:minSdkVersion="8"
+            android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/parking_sign">
+        <uses-library android:name="com.google.android.maps"/>
+
+        <activity
+                android:name="OverviewActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ParkingList"/>
+        <activity android:name=".SaveParking"/>
+        <activity android:name=".ParkingDetail"/>
+        <activity android:name=".NearestParking"/>
+        <activity android:name=".Preferences"/>
+        <activity android:name=".ParkingMap"/>
+
+        <!--  Login Activity -->
+        <activity
+                android:label="Login Account"
+                android:name=".LoginActivity"/>
+        <!--  Register Activity -->
+        <activity
+                android:label="Register New Account"
+                android:name=".RegisterActivity"/>
+
+        <!--  Around me Activities -->
+        <activity
+                android:label="Around Me"
+                android:name=".AroundMeParking"/>
+        <activity
+                android:label="Around Me Map"
+                android:name=".AroundMeParkingMap"/>
+
+        <!--  About Activities -->
+        <activity
+                android:label="About Us"
+                android:name=".About"/>
+
+        <!--  AdMob Ads Activities -->
+        <activity
+                android:name="com.google.ads.AdActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+
+</manifest>

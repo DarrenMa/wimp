@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIMP</string>
+    <string name="landing_text">Welcome to Where Is My Parking. Navigate using the menu items.</string>
+    <string name="save_spot">Save Spot</string>
+    <string name="menu_list">List all spots</string>
+    <string name="menu_save">Save current spot</string>
+    <string name="menu_aroundme">Around me</string>
+    <string name="menu_map_list_aroundme">Around me on map</string>
+    <string name="menu_nearest">Goto closest spot</string>
+    <string name="take_me">Take me there!</string>
+    <string name="menu_map_list">All spots on map</string>
+
+    <string name="WELCOME">WELCOME</string>
+    <string name="How_to_use_your_menu_items">How to use your menu items</string>
+    <string name="Shortcut_Spot">Shortcut Spot</string>
+    <string name="nearest_parking_immediately">Go to the nearest parking immediately</string>
+    <string name="Around_me">Around me</string>
+    <string name="nearest_in_area">Show all the spots within 2kms of your current location</string>
+    <string name="Save_Spot">Save Spot</string>
+    <string name="Save_current_location">Save your current location as a parking spot</string>
+    <string name="All_Spots">All Spots</string>
+    <string name="Show_all_spots">Show all spots</string>
+
+
+    <string name="LOGIN">LOGIN</string>
+    <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="Register">Register</string>
+
+    <string name="Username">Username</string>
+    <string name="username_hint">Your username</string>
+    <string name="Must_be_unique">Must be unique</string>
+    <string name="Password">Password</string>
+
+    <string name="Email">Email</string>
+
+    <string name="I_dont_have_an_account">I don\'t have account. Click here to Register</string>
+    <string name="Already_registered_Login_Here">Already registered. Login Here!</string>
+
+    <string name="Add_new">Add New</string>
+    <string name="Enter_spot_name">Enter spot name</string>
+
+    <string name="Heading">Heading</string>
+    <string name="Coordinates">Coordinates</string>
+    <string name="LatitudeTitle">Latitude:</string>
+    <string name="LongitudeTitle">Longitude:</string>
+    <string name="Latitude">45.200</string>
+    <string name="Longitude">9.992</string>
+    <string name="DistanceTitle">Distance:</string>
+    <string name="Distance">100km</string>
+
+    <string name="about">About</string>
+    <string name="this_project">...this project</string>
+    <string name="about_content">This project is free and is still in it\'s early stages. Special thanks to
+        OpenStreetMaps because I got the base parking spots from them.
+    </string>
+    <string name="about_content_notes">This application interacts with a GeoDjango based API hosted on DotCloud.
+        I am hosting it on Sandbox mode for now so it is possible that the
+        service goes down every now and again.
+    </string>
+    <string name="if_interest">Email darren.ma@supremosolutions.com for bugs, help or interest</string>
+
+</resources>

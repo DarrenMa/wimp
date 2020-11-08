@@ -1,0 +1,7 @@
+gen/
+.idea/
+*.pyc
+*.pyo
+.project
+.pydevproject
+.DS_Store
